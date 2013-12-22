@@ -1,0 +1,25 @@
+{
+  "name": "markdown-outline",
+  "description": "Generate an outline for markdown documents",
+  "author": "Ahmed Kamel",
+  "version": "0.0.1",
+  "main": "./index.js",
+  "repository": "git://github.com/a7medkamel/markdown-outline.git",
+  "homepage": "https://github.com/a7medkamel/markdown-outline",
+  "bugs": {
+    "url": "http://github.com/a7medkamel/markdown-outline/issues"
+  },
+  "keywords": [
+    "markdown",
+    "markup",
+    "html"
+  ],
+  "tags": [
+    "markdown",
+    "markup",
+    "html"
+  ],
+  "dependencies": {
+    "marked": "~0.2.10"
+  }
+}
