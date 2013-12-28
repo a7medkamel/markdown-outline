@@ -2,7 +2,7 @@
   "name": "markdown-outline",
   "description": "Generate an outline for markdown documents",
   "author": "Ahmed Kamel",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "main": "./index.js",
   "repository": "git://github.com/a7medkamel/markdown-outline.git",
   "homepage": "https://github.com/a7medkamel/markdown-outline",

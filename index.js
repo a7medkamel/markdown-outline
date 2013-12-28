@@ -11,10 +11,14 @@ if (!Array.prototype.last){
 function outline(uri, cb) {
   fs.readFile(uri, 'utf8', cb, function (err, data) {
     if (!err) {
-      var lex = new marked.Lexer().lex(data);
-      var headers = lex.filter(function(item){ return item.type == 'heading'; });
-      var outline = [];
-      for(element in headers.each) {
+      var lex     = new marked.Lexer().lex(data)
+        , headers = lex.filter(function(item){ return item.type == 'heading'; })
+        , outline = []
+        ;
+
+      for (var i = 0; i < headers.length; i++) {
+        var element = headers[i];
+
         switch(element.depth) {
           case 1:
             outline.push(element);
@@ -27,7 +31,7 @@ function outline(uri, cb) {
             }
             break;
         }
-      }
+      };
 
       cb(undefined, outline);
     } else {
